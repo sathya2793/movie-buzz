@@ -201,7 +201,7 @@ function getMovie() {
     type: 'GET',
     dataType: 'json',
     async: true,
-    url: 'http://www.omdbapi.com?i=' + movieId + '&apikey=3ca3b31f',
+    url: 'https://www.omdbapi.com?i=' + movieId + '&apikey=3ca3b31f',
     success: (response) => {
       console.log(response);
       $('.title').append(response.Title);
